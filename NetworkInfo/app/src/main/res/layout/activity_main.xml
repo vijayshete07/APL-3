@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView to display the operator name -->
+    <TextView
+        android:id="@+id/textViewOperatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operator Name: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewNetworkType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView to display the network type (e.g., 4G, WiFi) -->
+    <TextView
+        android:id="@+id/textViewNetworkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Type: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewOperatorInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewOperatorName" />
+
+    <!-- TextView to display detailed operator information -->
+    <TextView
+        android:id="@+id/textViewOperatorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operator Info: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonRefresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNetworkType" />
+
+    <!-- Button to refresh network information -->
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh Info"
+        android:onClick="refreshNetworkInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewOperatorInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

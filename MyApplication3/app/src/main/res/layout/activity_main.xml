@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Button to trigger exit dialog -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit App"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- RatingBar for user rating -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnExit"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:rating="0"/>
+
+    <!-- ProgressBar to show loading state -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+
+</RelativeLayout>

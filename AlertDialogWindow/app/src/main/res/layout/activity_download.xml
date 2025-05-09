@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewDownloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloading"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"/>
+
+    <!-- Horizontal ProgressBar with Custom Color -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/percentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Button to go back to MainActivity -->
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

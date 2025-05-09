@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spinner Example</string>
+    <!-- Define the string array for the Spinner -->
+    <string-array name="language_options">
+        <item>C</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>React.js</item>
+    </string-array>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:padding="20dp">
+
+    <!-- Title Text centered at the top -->
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELLO   ANISH   !!!"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Image placed below the title -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="Image" />
+
+    <!-- Button below the image -->
+    <Button
+        android:id="@+id/button_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        android:textColor="#ffffff"
+        android:backgroundTint="#6200EE"
+        android:layout_below="@id/image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Button placed next to Button 1 -->
+    <!-- Text placed below the buttons -->
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/button_one"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="210dp"
+        android:text="This is my app"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<!-- res/layout/custom_alert_bar.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FF0000"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/alertMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is an alert message!"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Close"
+        android:layout_marginStart="10dp"/>
+</LinearLayout>
+    erenceScreen>

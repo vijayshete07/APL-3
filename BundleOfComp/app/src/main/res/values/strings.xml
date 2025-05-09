@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BundleOfComp</string>
+    <string-array name="subjects_array">
+        <item>Mathematics</item>
+        <item>Science</item>
+        <item>Computer Science</item>
+        <item>English</item>
+        <item>History</item>
+    </string-array>
+</resources>
